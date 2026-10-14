@@ -1,0 +1,16 @@
+{
+  "name": "libretv-desktop",
+  "version": "2.16.12",
+  "private": true,
+  "description": "LibreTV 本地桌面版（Tauri v2 + 内置 Next.js 服务）",
+  "scripts": {
+    "tauri": "tauri",
+    "prepare:server": "node scripts/prepare-server.mjs",
+    "prepare:node": "node scripts/download-node.mjs",
+    "build": "npm run prepare:server && npm run prepare:node && tauri build",
+    "build:dir": "npm run prepare:server && npm run prepare:node && tauri build --no-bundle"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}

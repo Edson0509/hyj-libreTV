@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>LibreTV</title>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #101014; color: #e8e8ea;
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      display: flex; align-items: center; justify-content: center; }
+    .wrap { text-align: center; }
+    .logo { font-size: 28px; font-weight: 700; letter-spacing: 1px; }
+    .logo span { color: #7aa8ff; }
+    .sub { margin-top: 10px; font-size: 13px; color: #9a9aa2; }
+    .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+      background: #7aa8ff; margin-left: 8px; animation: blink 1.2s infinite; }
+    @keyframes blink { 0%,100% { opacity: .2; } 50% { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">Libre<span>TV</span><span class="dot"></span></div>
+    <div class="sub">正在启动本地服务…</div>
+  </div>
+</body>
+</html>

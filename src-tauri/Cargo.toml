@@ -1,0 +1,21 @@
+[package]
+name = "libretv-desktop"
+version = "2.16.12"
+description = "LibreTV 本地桌面版：内置 Next.js 聚合服务，Tauri v2 原生壳"
+authors = ["LibreTV Desktop"]
+edition = "2021"
+
+[lib]
+name = "libretv_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+url = "2"
+ctrlc = { version = "3", features = ["termination"] }

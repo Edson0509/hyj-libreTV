@@ -1,0 +1,13 @@
+# 构建产物
+server/
+.build/
+src-tauri/target/
+src-tauri/binaries/*
+!src-tauri/binaries/.gitkeep
+
+# 依赖
+node_modules/
+
+# 日志与本地配置
+*.log
+.env.local
